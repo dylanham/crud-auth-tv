@@ -1,0 +1,7 @@
+= form_for @tv do |f|
+  = f.label :brand
+  = f.text_field :brand
+  = f.label :size
+  = f.number_field :size
+  = f.submit "Create"
+= link_to 'Back', root_path

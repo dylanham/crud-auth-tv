@@ -1,0 +1,7 @@
+%h1 List of TVS
+= link_to 'New TV', new_tv_path
+- @tvs.each do |tv|
+  %p= tv.brand
+  %p= tv.size
+  = link_to 'edit', edit_tv_path(tv)
+  = link_to 'delete', tv_path(tv), method: :delete
